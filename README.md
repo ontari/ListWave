@@ -11,14 +11,14 @@ Get ToDoList :
 GET http://localhost:8080/ListWave-1.0/api/list
 GET http://localhost:8080/ListWave-1.0/api/list/{id}
 
-Uptdate:
-PUT GET http://localhost:8080/ListWave-1.0/api/list/{id}
+Update:
+PUT http://localhost:8080/ListWave-1.0/api/list/{id}
 
 Delete:
 DELETE http://localhost:8080/ListWave-1.0/api/list/{id}
 
 Create:
-GET http://localhost:8080/ListWave-1.0/api/list
+POST http://localhost:8080/ListWave-1.0/api/list
 
 //JSON
 {

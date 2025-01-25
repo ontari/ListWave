@@ -1,10 +1,8 @@
 package com.malem.listwave.entities;
 
 
-import jakarta.persistence.*;
-
-
 public class Task {
+
 
     private Long id;
     private String description;

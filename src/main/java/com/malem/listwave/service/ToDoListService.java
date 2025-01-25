@@ -16,8 +16,10 @@ public class ToDoListService
     public Task createTask(Task task){
 
         Long id = nextId.getAndIncrement();
+
         task.setId(id);
         toDoList.put(id,task);
+
         return task;
     }
 
@@ -36,6 +38,13 @@ public class ToDoListService
 
     public boolean deleteTask(Long id){
         return toDoList.remove(id) != null;
+    }
+
+    public boolean deleteAllTasks()
+    {
+        toDoList.clear();
+
+        return toDoList.isEmpty();
     }
 
     public List<Task> getToDoList(){

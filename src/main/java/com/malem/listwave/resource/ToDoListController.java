@@ -43,8 +43,17 @@ public class ToDoListController
     public Response deleteTask(@PathParam("id") Long id){
 
         boolean isDeleted = toDoListService.deleteTask(id);
-        if (isDeleted) { return Response.status(Response.Status.NOT_FOUND).build(); }
+        if (isDeleted) { return Response.status(Response.Status.GONE).build(); }
 
+        return Response.noContent().build();
+    }
+
+    @DELETE
+    @Path("/delete")
+    public Response deleteList()
+    {
+        boolean isDeleted = toDoListService.deleteAllTasks();
+        if (isDeleted) { return Response.status(Response.Status.GONE).build(); }
         return Response.noContent().build();
     }
 
