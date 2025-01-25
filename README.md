@@ -4,6 +4,8 @@
 * WildFly -> install on your pc
 * JDK 17
 
+Maven:
+mvn clean package
 
 Get ToDoList : 
 GET http://localhost:8080/ListWave-1.0/api/list
