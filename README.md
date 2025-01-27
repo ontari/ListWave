@@ -92,7 +92,7 @@ JSON Payload Example:
 ```json
 {
 "status": "in Porgess",
-"description": "Buy musik"
+"description": "Buy some awesome books"
 }
 ```
 
