@@ -25,3 +25,6 @@ POST http://localhost:8080/ListWave-1.0/api/list
 "status": "in Porgess",
 "description": "Buy musik"
 }
+
+
+Ensure CORS Is Enabled (if Angular and Jakarta EE run on different domains during development):
