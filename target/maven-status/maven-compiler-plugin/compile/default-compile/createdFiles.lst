@@ -3,3 +3,4 @@ com\malem\listwave\service\ToDoListService.class
 com\malem\listwave\resource\ToDoListController.class
 com\malem\listwave\ListwaveServlet.class
 com\malem\listwave\resource\ListWaveApplication.class
+com\malem\listwave\CorsFilter.class
