@@ -1,5 +1,7 @@
 # ListWave Backend App
 
+
+
 ## Requirements
 
 ### Install Required Tools
@@ -14,14 +16,21 @@ Before setting up the ListWave Backend, ensure that the following tools are inst
    - Install WildFly on your PC by downloading it from [WildFly's official website](https://wildfly.org/downloads/).
    - Unzip the downloaded package and set the `WILDFLY_HOME` environment variable to point to your WildFly installation directory.
 
-3. **JDK 17**
+3. **Jakarta EE 10**
+   - Ensure that your application server (e.g., WildFly) supports Jakarta EE 10. WildFly 27+ comes with Jakarta EE 10 compatibility.
+   - For more information, refer to [Jakarta EE's official website](https://jakarta.ee/).
+
+4. **JDK 17**
    - Install JDK 17 from either [AdoptOpenJDK](https://adoptopenjdk.net/) or [Oracle JDK](https://www.oracle.com/java/technologies/javase-jdk17-downloads.html).
    - Set the `JAVA_HOME` environment variable to point to your JDK installation directory.
 
-4. **ListWave FrontEnd App**
+5. **ListWave FrontEnd App**
 	- Feel free to [Download ListWave FrontEnd](https://github.com/ontari/listwave-frontend-app1) from master to have a better User Experience
 
 ### Setting Up Maven
+
+- Open a terminal and navigate to the project's root directory.
+- Run the command `mvn clean install` to build the project and download all required dependencies.
 
 Once Maven is installed, run the following command to clean and package the Maven project:
 
@@ -29,6 +38,14 @@ Once Maven is installed, run the following command to clean and package the Mave
 mvn clean package
 
 ```
+
+### Deploying to WildFly
+
+1. Start WildFly by running `standalone.sh` (Linux/macOS) or `standalone.bat` (Windows) located in the `bin` directory of your WildFly installation.
+2. Deploy the generated `.war` file located in the `target` directory to WildFly:
+   - Copy the `.war` file to the `standalone/deployments` directory of your WildFly installation.
+   - Monitor the WildFly logs to ensure successful deployment.
+
 
 __________________
 
